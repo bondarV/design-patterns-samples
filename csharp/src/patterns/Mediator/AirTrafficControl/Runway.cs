@@ -3,8 +3,9 @@ namespace DesignPatterns.Mediator
   class Runway
   {
     public readonly Guid Id = Guid.NewGuid();
-    public Aircraft? IsBusyWithAircraft;
-
+    
+    public Aircraft? IsBusyWithAircraft { get; set;}  
+    
     public bool CheckIsActive()
     {
       bool result = false;
